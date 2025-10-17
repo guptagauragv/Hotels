@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 // Define MongoDB connection URL
 //const mongoURL = "mongodb://localhost:27017/hotels"; // replace database with your database name
 const mongoURL =
-  "mongodb+srv://guptagauragv:Qwerty@12345@cluster0.lntqoao.mongodb.net/"; // global host
+  "mongodb+srv://guptagauragv:<Qwerty12345>@cluster0.lntqoao.mongodb.net/"; // global host
 // setup mongoDB connection0
 
 mongoose.connect(mongoURL);
