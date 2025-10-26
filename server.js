@@ -4,6 +4,10 @@ const db = require("./db");
 const bodyParser = require("body-parser");
 app.use(bodyParser.json()); //req.body
 
+require('dotenv').config();
+
+const PORT = process.env.PORT || 3000 ;
+
 app.get("/", (req, res) => {
   res.send("welcome to our hotel");
 });
@@ -17,6 +21,6 @@ const personRoutes = require("./routes/personRoutes");
 app.use("/menu", menuRoutes);
 app.use("/person", personRoutes);
 
-app.listen(3000, () => {
-  console.log("listening on port 3000");
+app.listen(PORT, () => {
+  console.log("listening on 3000");
 });
